@@ -1,0 +1,388 @@
+/* =========================================================
+   FOR EVERY SISTER ❤️ — Raksha Bandhan Master Design System
+   ========================================================= */
+
+:root {
+  /* Festive Color Palette */
+  --bg-primary: #0e051e;
+  --bg-secondary: #1a0b33;
+  --bg-tertiary: #2a1150;
+  
+  --gold-300: #ffe58f;
+  --gold-400: #ffd700;
+  --gold-500: #f5b041;
+  --gold-600: #d48806;
+  --gold-gradient: linear-gradient(135deg, #ffe58f 0%, #ffd700 50%, #d48806 100%);
+  --gold-glow: rgba(255, 215, 0, 0.4);
+
+  --pink-400: #ff758c;
+  --pink-500: #ff2e93;
+  --pink-600: #e01171;
+  --pink-gradient: linear-gradient(135deg, #ff758c 0%, #ff2e93 50%, #c0005a 100%);
+  --pink-glow: rgba(255, 46, 147, 0.45);
+
+  --purple-400: #b388ff;
+  --purple-500: #7c4dff;
+  --purple-600: #512da8;
+
+  --crimson-500: #e63946;
+  --crimson-glow: rgba(230, 57, 70, 0.45);
+
+  --cream-100: #ffffff;
+  --cream-200: #fff9f2;
+  --cream-300: #fde8d7;
+  --cream-muted: rgba(255, 249, 242, 0.75);
+
+  /* Glassmorphism */
+  --glass-bg: rgba(30, 14, 58, 0.65);
+  --glass-bg-hover: rgba(45, 20, 85, 0.8);
+  --glass-border: rgba(255, 215, 0, 0.22);
+  --glass-border-hover: rgba(255, 215, 0, 0.55);
+  --glass-blur: blur(16px);
+  --glass-shadow: 0 12px 40px 0 rgba(0, 0, 0, 0.5), inset 0 1px 1px 0 rgba(255, 255, 255, 0.15);
+
+  /* Typography */
+  --font-display: 'Cinzel Decorative', serif;
+  --font-script: 'Great Vibes', cursive;
+  --font-body: 'Outfit', sans-serif;
+  --font-ui: 'Plus Jakarta Sans', sans-serif;
+
+  /* Spacing & Radii */
+  --radius-sm: 8px;
+  --radius-md: 16px;
+  --radius-lg: 24px;
+  --radius-full: 9999px;
+
+  /* Transitions */
+  --transition-smooth: all 0.35s cubic-bezier(0.16, 1, 0.3, 1);
+  --transition-spring: all 0.5s cubic-bezier(0.34, 1.56, 0.64, 1);
+}
+
+/* Reset & Box Sizing */
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  -webkit-tap-highlight-color: transparent;
+}
+
+html {
+  scroll-behavior: smooth;
+  font-family: var(--font-body);
+  background-color: var(--bg-primary);
+  color: var(--cream-200);
+  overflow-x: hidden;
+}
+
+body {
+  min-height: 100vh;
+  width: 100%;
+  position: relative;
+  background: radial-gradient(circle at 50% 20%, #290d4e 0%, #15062b 45%, #0a0217 100%);
+  background-attachment: fixed;
+  color: var(--cream-200);
+  line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  overflow-x: hidden;
+}
+
+/* Scrollbar Customization */
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-track {
+  background: #0d041c;
+}
+::-webkit-scrollbar-thumb {
+  background: linear-gradient(to bottom, #d48806, #ff2e93);
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #ffd700;
+}
+
+/* Typography Utilities */
+.font-display {
+  font-family: var(--font-display);
+}
+.font-script {
+  font-family: var(--font-script);
+}
+.font-body {
+  font-family: var(--font-body);
+}
+
+.text-gold {
+  background: var(--gold-gradient);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  display: inline-block;
+}
+
+.text-pink {
+  background: var(--pink-gradient);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  display: inline-block;
+}
+
+.text-glow-gold {
+  text-shadow: 0 0 20px rgba(255, 215, 0, 0.6), 0 0 40px rgba(255, 215, 0, 0.3);
+}
+
+.text-glow-pink {
+  text-shadow: 0 0 20px rgba(255, 46, 147, 0.6), 0 0 40px rgba(255, 46, 147, 0.3);
+}
+
+/* Glassmorphic Components */
+.glass-card {
+  background: var(--glass-bg);
+  backdrop-filter: var(--glass-blur);
+  -webkit-backdrop-filter: var(--glass-blur);
+  border: 1px solid var(--glass-border);
+  box-shadow: var(--glass-shadow);
+  border-radius: var(--radius-lg);
+  position: relative;
+  overflow: hidden;
+  transition: var(--transition-smooth);
+}
+
+.glass-card:hover {
+  border-color: var(--glass-border-hover);
+  box-shadow: 0 16px 48px 0 rgba(0, 0, 0, 0.6), 0 0 24px rgba(255, 215, 0, 0.2);
+}
+
+.glass-pill {
+  background: rgba(255, 255, 255, 0.08);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+  border: 1px solid rgba(255, 215, 0, 0.25);
+  border-radius: var(--radius-full);
+  padding: 6px 16px;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  color: var(--gold-300);
+  font-size: 0.9rem;
+  font-weight: 500;
+}
+
+/* Premium Festive Buttons */
+.btn-festive {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  padding: 16px 36px;
+  font-family: var(--font-body);
+  font-size: 1.15rem;
+  font-weight: 700;
+  color: #12072b;
+  background: var(--gold-gradient);
+  border: none;
+  border-radius: var(--radius-full);
+  cursor: pointer;
+  box-shadow: 0 8px 30px rgba(255, 215, 0, 0.35), 0 0 0 2px rgba(255, 255, 255, 0.2) inset;
+  transition: var(--transition-spring);
+  text-decoration: none;
+  user-select: none;
+  overflow: hidden;
+}
+
+.btn-festive::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.6), transparent);
+  transition: 0.6s ease;
+}
+
+.btn-festive:hover {
+  transform: translateY(-3px) scale(1.03);
+  box-shadow: 0 12px 40px rgba(255, 215, 0, 0.6), 0 0 20px rgba(255, 46, 147, 0.4);
+}
+
+.btn-festive:hover::before {
+  left: 100%;
+}
+
+.btn-festive:active {
+  transform: translateY(1px) scale(0.98);
+}
+
+.btn-festive-pink {
+  background: var(--pink-gradient);
+  color: #ffffff;
+  box-shadow: 0 8px 30px rgba(255, 46, 147, 0.4);
+}
+.btn-festive-pink:hover {
+  box-shadow: 0 12px 40px rgba(255, 46, 147, 0.7), 0 0 20px rgba(255, 215, 0, 0.4);
+}
+
+.btn-festive-secondary {
+  background: rgba(255, 255, 255, 0.08);
+  border: 1px solid var(--glass-border-hover);
+  color: var(--cream-100);
+  backdrop-filter: blur(10px);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.3);
+}
+
+.btn-festive-secondary:hover {
+  background: rgba(255, 215, 0, 0.15);
+  border-color: var(--gold-400);
+  color: var(--gold-300);
+  transform: translateY(-2px);
+}
+
+/* Animations */
+@keyframes float {
+  0%, 100% { transform: translateY(0px) rotate(0deg); }
+  50% { transform: translateY(-12px) rotate(2deg); }
+}
+
+@keyframes pulseGlow {
+  0%, 100% { opacity: 0.6; transform: scale(1); filter: drop-shadow(0 0 12px rgba(255, 215, 0, 0.4)); }
+  50% { opacity: 1; transform: scale(1.05); filter: drop-shadow(0 0 28px rgba(255, 215, 0, 0.8)); }
+}
+
+@keyframes rotateSlow {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+
+@keyframes shimmerText {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+.animate-float {
+  animation: float 4s ease-in-out infinite;
+}
+
+.animate-pulse-glow {
+  animation: pulseGlow 3s ease-in-out infinite;
+}
+
+.animate-rotate-slow {
+  animation: rotateSlow 24s linear infinite;
+}
+
+/* Section Containers */
+.section-wrapper {
+  min-height: 100vh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 80px 24px;
+  position: relative;
+  z-index: 10;
+}
+
+.section-content {
+  width: 100%;
+  max-width: 1000px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+/* Section Header Typography */
+.section-tag {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  font-family: var(--font-ui);
+  font-size: 0.85rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 2.5px;
+  color: var(--gold-400);
+  background: rgba(255, 215, 0, 0.1);
+  border: 1px solid rgba(255, 215, 0, 0.3);
+  padding: 6px 18px;
+  border-radius: var(--radius-full);
+  margin-bottom: 20px;
+}
+
+.section-title {
+  font-family: var(--font-display);
+  font-size: clamp(2rem, 5vw, 3.5rem);
+  font-weight: 900;
+  line-height: 1.2;
+  margin-bottom: 18px;
+  letter-spacing: -0.5px;
+}
+
+.section-subtitle {
+  font-family: var(--font-body);
+  font-size: clamp(1.05rem, 2.5vw, 1.35rem);
+  color: var(--cream-muted);
+  max-width: 680px;
+  margin: 0 auto 36px;
+  font-weight: 300;
+  line-height: 1.6;
+}
+
+/* Decorative Diya & Rangoli Glow */
+.diya-glow-container {
+  filter: drop-shadow(0 0 35px rgba(255, 180, 0, 0.65));
+}
+
+/* Accessibility: Reduced Motion */
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+/* Mobile Adjustments */
+@media (max-width: 768px) {
+  .section-wrapper {
+    padding: 60px 16px;
+  }
+  .btn-festive {
+    padding: 14px 28px;
+    font-size: 1rem;
+    width: 100%;
+    max-width: 320px;
+  }
+}
+
+/* Print Stylesheet for Sister Certificate */
+@media print {
+  body {
+    background: #ffffff !important;
+    color: #000000 !important;
+  }
+  header, .desktop-progress, .section-tag, .btn-festive, form, .section-subtitle, .section-title, canvas {
+    display: none !important;
+  }
+  .printable-certificate-area, .certificate-card {
+    display: block !important;
+    margin: 0 auto !important;
+    max-width: 100% !important;
+    box-shadow: none !important;
+    border: 3px solid #d48806 !important;
+    background: #ffffff !important;
+    color: #12072b !important;
+    page-break-inside: avoid !important;
+  }
+  .certificate-card * {
+    color: #12072b !important;
+    text-shadow: none !important;
+  }
+  .text-gold {
+    color: #b87700 !important;
+    -webkit-text-fill-color: #b87700 !important;
+  }
+}
