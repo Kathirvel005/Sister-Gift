@@ -10,14 +10,15 @@ import Section2WhatIsASister from './sections/Section2WhatIsASister';
 import Section3Superpowers from './sections/Section4Superpowers';
 import Section4Timeline from './sections/Section5Timeline';
 import Section5VirtualRakhi from './sections/Section6VirtualRakhi';
-import Section6EmotionalMessage from './sections/Section7EmotionalMessage';
-import Section7MiniGame from './sections/Section8MiniGame';
-import Section8FinalSurprise from './sections/Section9FinalSurprise';
-import Section9Celebration from './sections/Section10Celebration';
+import Section6FunnyGifts from './sections/SectionFunnyGifts';
+import Section7EmotionalMessage from './sections/Section7EmotionalMessage';
+import Section8MiniGame from './sections/Section8MiniGame';
+import Section9FinalSurprise from './sections/Section9FinalSurprise';
+import Section10Celebration from './sections/Section10Celebration';
 
 export default function App() {
   const [activeSection, setActiveSection] = useState(1);
-  const TOTAL_SECTIONS = 9;
+  const TOTAL_SECTIONS = 10;
 
   // Scroll to top on section change
   useEffect(() => {
@@ -83,10 +84,11 @@ export default function App() {
             {activeSection === 3 && <Section3Superpowers onNext={handleNextSection} />}
             {activeSection === 4 && <Section4Timeline onNext={handleNextSection} />}
             {activeSection === 5 && <Section5VirtualRakhi onNext={handleNextSection} />}
-            {activeSection === 6 && <Section6EmotionalMessage onNext={handleNextSection} />}
-            {activeSection === 7 && <Section7MiniGame onNext={handleNextSection} />}
-            {activeSection === 8 && <Section8FinalSurprise onNext={handleNextSection} />}
-            {activeSection === 9 && <Section9Celebration onReplay={handleReplay} />}
+            {activeSection === 6 && <Section6FunnyGifts onNext={handleNextSection} />}
+            {activeSection === 7 && <Section7EmotionalMessage onNext={handleNextSection} />}
+            {activeSection === 8 && <Section8MiniGame onNext={handleNextSection} />}
+            {activeSection === 9 && <Section9FinalSurprise onNext={handleNextSection} />}
+            {activeSection === 10 && <Section10Celebration onReplay={handleReplay} />}
           </motion.div>
         </AnimatePresence>
       </main>

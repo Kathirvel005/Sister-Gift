@@ -6,7 +6,7 @@ import { triggerFestiveConfetti, triggerHeartConfetti } from '../utils/confettiH
 
 export default function SisterCertificate() {
   const [sisterName, setSisterName] = useState('');
-  const [brotherName, setBrotherName] = useState('');
+  const [brotherName, setBrotherName] = useState('Lovely brother Kathirvel');
   const [awardTitle, setAwardTitle] = useState("World's #1 Drama Queen & Best Sister 🏆");
   const [customTitle, setCustomTitle] = useState('');
   const [brotherPromise, setBrotherPromise] = useState("Unlimited 24/7 Bodyguard Protection & Zero Snitching 🛡️");
@@ -14,7 +14,7 @@ export default function SisterCertificate() {
   const [isDownloading, setIsDownloading] = useState(false);
 
   const displaySisterName = sisterName.trim() || 'My Favorite Drama Queen';
-  const displayBrotherName = brotherName.trim() || 'Your Cooler Brother Kathirvel T 😎';
+  const displayBrotherName = brotherName.trim() || 'Lovely brother Kathirvel';
   const finalAwardTitle = awardTitle === 'custom' ? (customTitle.trim() || 'Supreme Sibling of Chaos 👑') : awardTitle;
 
   const awardOptions = [
@@ -132,7 +132,7 @@ export default function SisterCertificate() {
     ctx.fillStyle = '#ff758c';
     ctx.shadowColor = 'rgba(255, 46, 147, 0.7)';
     ctx.shadowBlur = 10;
-    ctx.fillText('🎁 OFFICIAL RAKSHA BANDHAN GIFT & TOLERANCE AWARD FROM YOUR BROTHER 🎁', width / 2, 130);
+    ctx.fillText('🎁 OFFICIAL RAKSHA BANDHAN GIFT FROM LOVELY BROTHER KATHIRVEL 🎁', width / 2, 130);
     ctx.shadowBlur = 0;
 
     // 5. Main Certificate Title
@@ -150,7 +150,7 @@ export default function SisterCertificate() {
     // Sub-banner
     ctx.font = '600 20px Outfit, sans-serif';
     ctx.fillStyle = 'rgba(255, 215, 0, 0.8)';
-    ctx.fillText('⭐ OFFICIAL BROTHER-APPROVED SIBLING SURVIVAL AWARD ⭐', width / 2, 250);
+    ctx.fillText('⭐ OFFICIAL SIBLING SURVIVAL AWARD • GIFTED BY LOVELY BROTHER KATHIRVEL ⭐', width / 2, 250);
 
     // Decorative divider line
     ctx.strokeStyle = '#ffd700';
@@ -211,11 +211,11 @@ export default function SisterCertificate() {
     ctx.textAlign = 'left';
     ctx.font = 'bold 20px Outfit, sans-serif';
     ctx.fillStyle = '#ff758c';
-    ctx.fillText('📜 BROTHER\'S SACRED RAKSHA BANDHAN GIFT CLAUSES & PROMISES:', boxX + 24, boxY + 38);
+    ctx.fillText('📜 LOVELY BROTHER KATHIRVEL\'S SACRED RAKSHA BANDHAN CLAUSES:', boxX + 24, boxY + 38);
 
     ctx.font = '400 20px Outfit, sans-serif';
     ctx.fillStyle = '#ffffff';
-    ctx.fillText(`1. Brother's Special Promise: ${brotherPromise}`, boxX + 24, boxY + 76);
+    ctx.fillText(`1. Lovely Brother's Special Promise: ${brotherPromise}`, boxX + 24, boxY + 76);
     ctx.fillText('2. Lifetime Warranty: 100% Free emergency hugs, defense against anyone who annoys you, and zero returns!', boxX + 24, boxY + 110);
     ctx.font = 'italic 17px Outfit, sans-serif';
     ctx.fillStyle = '#ffd700';
@@ -272,7 +272,7 @@ export default function SisterCertificate() {
     ctx.textAlign = 'right';
     ctx.font = '600 19px Outfit, sans-serif';
     ctx.fillStyle = 'rgba(255, 255, 255, 0.7)';
-    ctx.fillText('GIFTED WITH LOVE BY YOUR BROTHER:', width - 140, 915);
+    ctx.fillText('GIFTED WITH LOVE BY LOVELY BROTHER:', width - 140, 915);
 
     ctx.font = 'bold 28px Outfit, sans-serif';
     ctx.fillStyle = '#ffd700';
@@ -287,7 +287,7 @@ export default function SisterCertificate() {
 
     ctx.font = 'italic 16px Outfit, sans-serif';
     ctx.fillStyle = 'rgba(255, 255, 255, 0.55)';
-    ctx.fillText('Authorized Brother Signature & Lifetime Bond', width - 140, 1005);
+    ctx.fillText('Authorized Signature of Lovely Brother Kathirvel', width - 140, 1005);
 
     // 12. Trigger Instant Download
     setTimeout(() => {
@@ -305,7 +305,7 @@ export default function SisterCertificate() {
       {/* Header Tag */}
       <div className="section-tag" style={{ marginBottom: '14px' }}>
         <Gift size={16} />
-        <span>GIFT FROM BROTHER FOR RAKSHA BANDHAN</span>
+        <span>GIFT FROM LOVELY BROTHER KATHIRVEL</span>
       </div>
 
       <h2
@@ -319,7 +319,7 @@ export default function SisterCertificate() {
         CLAIM YOUR SISTER CERTIFICATE 📜
       </h2>
       <p style={{ color: 'var(--cream-muted)', fontSize: '1.05rem', maxWidth: '680px', margin: '0 auto 32px', lineHeight: 1.6 }}>
-        A funny, heartwarming, and 100% original gift certificate from brother to sister! Personalize it with her name and download the keepsake award.
+        A funny, heartwarming, and 100% original gift certificate from Lovely brother Kathirvel to his sister! Personalize it with her name and download the keepsake award.
       </p>
 
       {/* Input Form & Customization Box */}
@@ -368,11 +368,11 @@ export default function SisterCertificate() {
             <div>
               <label style={{ display: 'flex', alignItems: 'center', gap: '6px', color: 'var(--gold-300)', fontSize: '0.95rem', fontWeight: 700, marginBottom: '8px' }}>
                 <Shield size={16} color="#ffd700" />
-                <span>Brother's Name / Nickname:</span>
+                <span>Brother's Name:</span>
               </label>
               <input
                 type="text"
-                placeholder="e.g. Kathirvel T, Your Cooler Brother, Bhaiya..."
+                placeholder="e.g. Lovely brother Kathirvel..."
                 value={brotherName}
                 onChange={(e) => setBrotherName(e.target.value)}
                 style={{
@@ -565,7 +565,7 @@ export default function SisterCertificate() {
 
           {/* Certificate Gift Tag */}
           <p style={{ fontSize: '0.85rem', color: '#ff758c', letterSpacing: '2px', fontWeight: 800, textTransform: 'uppercase', marginBottom: '10px' }}>
-            🎁 OFFICIAL RAKSHA BANDHAN GIFT FROM YOUR BROTHER 🎁
+            🎁 OFFICIAL RAKSHA BANDHAN GIFT FROM LOVELY BROTHER KATHIRVEL 🎁
           </p>
 
           {/* Main Title */}
@@ -583,7 +583,7 @@ export default function SisterCertificate() {
           </h3>
 
           <p style={{ color: 'var(--gold-300)', fontSize: '0.9rem', fontWeight: 600, letterSpacing: '1.5px', marginBottom: '14px' }}>
-            ⭐ OFFICIAL BROTHER-APPROVED SIBLING SURVIVAL AWARD ⭐
+            ⭐ OFFICIAL SIBLING SURVIVAL AWARD • GIFTED BY LOVELY BROTHER KATHIRVEL ⭐
           </p>
 
           <p style={{ color: 'var(--cream-muted)', fontSize: '1.05rem', marginBottom: '12px' }}>
@@ -653,7 +653,7 @@ export default function SisterCertificate() {
           >
             <div style={{ display: 'flex', alignItems: 'center', gap: '8px', color: '#ff758c', fontWeight: 800, marginBottom: '8px' }}>
               <Shield size={16} />
-              <span>BROTHER'S SACRED RAKSHA BANDHAN CLAUSES & PROMISES:</span>
+              <span>LOVELY BROTHER KATHIRVEL'S SACRED RAKSHA BANDHAN CLAUSES:</span>
             </div>
             <p style={{ color: '#ffffff', marginBottom: '6px' }}>
               <strong>1. Special Gift Promise:</strong> {brotherPromise}
@@ -718,12 +718,12 @@ export default function SisterCertificate() {
             {/* Presented By Brother */}
             <div style={{ textAlign: 'right' }}>
               <span style={{ display: 'block', fontSize: '0.75rem', color: 'var(--cream-muted)', textTransform: 'uppercase', letterSpacing: '1px' }}>
-                Gifted With Love By Brother
+                Gifted With Love By Lovely Brother:
               </span>
-              <span style={{ fontSize: '1rem', color: '#ffd700', fontWeight: 700 }}>
+              <span style={{ fontSize: '1.05rem', color: '#ffd700', fontWeight: 700 }}>
                 {displayBrotherName}
               </span>
-              <div style={{ width: '120px', height: '1px', background: 'rgba(255, 215, 0, 0.4)', marginTop: '4px', marginLeft: 'auto' }} />
+              <div style={{ width: '140px', height: '1px', background: 'rgba(255, 215, 0, 0.4)', marginTop: '4px', marginLeft: 'auto' }} />
               <span style={{ display: 'block', fontSize: '0.7rem', color: 'rgba(255,255,255,0.5)', fontStyle: 'italic', marginTop: '2px' }}>
                 Authorized Sibling Bond
               </span>

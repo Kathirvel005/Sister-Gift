@@ -171,6 +171,16 @@ export default function Section9FinalSurprise({ onNext }) {
                   >
                     “A sister — in blood or in spirit — is a forever blessing.”
                   </p>
+                  <p
+                    style={{
+                      color: '#ffd700',
+                      fontWeight: 700,
+                      fontSize: 'clamp(1.1rem, 2.6vw, 1.35rem)',
+                      marginTop: '8px'
+                    }}
+                  >
+                    “Specially made with endless love by your Lovely brother Kathirvel ❤️”
+                  </p>
                 </div>
 
                 <div

@@ -90,7 +90,7 @@ export default function Section8MiniGame({ onNext }) {
           animate={{ opacity: 1, y: 0 }}
           className="section-tag"
         >
-          <span>CHAPTER 07</span>
+          <span>CHAPTER 08</span>
           <span>•</span>
           <span>FESTIVE MINI-GAME</span>
         </motion.div>

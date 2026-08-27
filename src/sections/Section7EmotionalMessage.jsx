@@ -14,7 +14,7 @@ export default function Section7EmotionalMessage({ onNext }) {
           animate={{ opacity: 1, y: 0 }}
           className="section-tag"
         >
-          <span>CHAPTER 06</span>
+          <span>CHAPTER 07</span>
           <span>•</span>
           <span>FROM THE HEART</span>
         </motion.div>
@@ -81,6 +81,22 @@ export default function Section7EmotionalMessage({ onNext }) {
             })}
           </div>
 
+          {/* Brother's Signature */}
+          <motion.div
+            initial={{ opacity: 0, y: 15 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.6, delay: 0.8 }}
+            style={{ marginTop: '28px', textAlign: 'center' }}
+          >
+            <p style={{ fontFamily: 'var(--font-script)', fontSize: 'clamp(1.8rem, 4.5vw, 2.5rem)', color: '#ffd700', marginBottom: '4px' }}>
+              With endless love & protection,
+            </p>
+            <p style={{ fontFamily: 'var(--font-display)', fontSize: 'clamp(1.15rem, 3.2vw, 1.55rem)', fontWeight: 800, color: '#ffffff', letterSpacing: '0.5px' }}>
+              — Your Lovely brother Kathirvel ❤️
+            </p>
+          </motion.div>
+
           {/* Decorative Divider */}
           <div
             style={{
@@ -88,7 +104,7 @@ export default function Section7EmotionalMessage({ onNext }) {
               alignItems: 'center',
               justifyContent: 'center',
               gap: '12px',
-              marginTop: '32px'
+              marginTop: '28px'
             }}
           >
             <div style={{ width: '60px', height: '1px', background: 'linear-gradient(90deg, transparent, #ffd700)' }} />

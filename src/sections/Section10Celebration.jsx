@@ -144,7 +144,7 @@ export default function Section10Celebration({ onReplay }) {
           animate={{ opacity: 1, y: 0 }}
           className="section-tag"
         >
-          <span>CHAPTER 09</span>
+          <span>CHAPTER 10</span>
           <span>•</span>
           <span>GRAND FINALE</span>
         </motion.div>
@@ -237,7 +237,7 @@ export default function Section10Celebration({ onReplay }) {
                 marginBottom: '16px'
               }}
             >
-              May this sacred festival bring joy, laughter, eternal health, and endless sweet memories to every sister.
+              A special Raksha Bandhan surprise from Lovely brother Kathirvel. May this sacred festival bring joy, laughter, eternal health, and endless sweet memories!
             </p>
 
             {/* Quick jump to Certificate */}
@@ -302,17 +302,18 @@ export default function Section10Celebration({ onReplay }) {
         <div
           style={{
             marginTop: '56px',
-            fontSize: '0.9rem',
+            fontSize: '0.95rem',
             color: 'var(--cream-muted)',
             display: 'flex',
             alignItems: 'center',
             justifyContent: 'center',
-            gap: '8px'
+            gap: '8px',
+            flexWrap: 'wrap'
           }}
         >
           <span>Crafted with</span>
           <Heart size={16} fill="#ff2e93" color="#ff2e93" />
-          <span>for all sisters in the world</span>
+          <span>by <strong style={{ color: '#ffd700' }}>Lovely brother Kathirvel</strong> for all sisters in the world</span>
         </div>
       </div>
     </section>

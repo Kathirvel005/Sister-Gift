@@ -209,3 +209,83 @@ export const EMOTIONAL_MESSAGE_LINES = [
   "Are priceless.",
   "Thank you for being a sister. ❤️"
 ];
+
+export const FUNNY_RAKHI_GIFTS = [
+  {
+    id: 'broom',
+    title: 'Nimbus 3000 Sister Floor Sweeper 🧹',
+    category: 'GIFT #1 • ROOM SANITATION DIVISION',
+    tag: 'Aero-Dynamic Witch Edition 🧙‍♀️',
+    shortName: 'Magic Broom Pro',
+    desc: 'Guaranteed 100% turbo-speed room sweeping and zero dust left behind! Equipped with dual-mode flying capability so you can zoom around the neighborhood at night.',
+    quote: '“Since your room looks like a category 5 hurricane hit it, this is the most practical gift in human history!”',
+    sender: 'Lovely brother Kathirvel 😂',
+    features: [
+      '0% Electricity consumed (100% sister effort)',
+      'Automatic floor sweeping and dust eradication mode',
+      'Witch flying mode unlocked (Night hours only)',
+      'Lifetime warranty: Strictly non-refundable'
+    ],
+    price: 'Priceless ($0.00 - No Cash Refund)',
+    color: '#ffd700',
+    icon: '🧹'
+  },
+  {
+    id: 'washing_brush',
+    title: 'Supreme Dish Scrubber & Scrub Master 🧽',
+    category: 'GIFT #2 • KITCHEN WARFARE DEPARTMENT',
+    tag: 'VIP Dishwasher Promotion 🍽️',
+    shortName: 'Ultra Dish Scrubber',
+    desc: 'Equipped with 360-degree grime destruction bristles. Perfect for scrubbing that one burnt pan you left on the kitchen stove 3 days ago!',
+    quote: '“Congratulations on your official promotion to Chief Executive Dishwashing Officer (CEDO)! The sink is waiting for you!”',
+    sender: 'Lovely brother Kathirvel 🫧',
+    features: [
+      '360° Grime obliteration & foam multiplying bristles',
+      'Ergonomic soft grip designed for royal sister hands',
+      'Lifetime VIP kitchen sink access pass',
+      '100% Anti-snack residue technology'
+    ],
+    price: 'Value: Hard Labor Required 💸',
+    color: '#00d2d3',
+    icon: '🧽'
+  },
+  {
+    id: 'cooking_vessel',
+    title: 'MasterChef Kadai & Cooking Vessel 🍳',
+    category: 'GIFT #3 • BROTHER HUNGER ELIMINATION UNIT',
+    tag: '2:00 AM Maggie Machine 👩‍🍳',
+    shortName: 'Maggie Kadai 2.0',
+    desc: 'Engineered specifically so you can cook 2:00 AM Maggie, crispy dosas, and delicious food whenever your brother is hungry.',
+    quote: '“With great cooking vessels comes great responsibility to feed your brother tasty snacks 24/7!”',
+    sender: 'Lovely brother Kathirvel 😋',
+    features: [
+      '2-Minute Maggie instant heating & non-stick shield',
+      'Heat resistant handles with brother-pleasing technology',
+      'Brother-feeding compatibility: 100% Required',
+      'Zero burnt food excuse policy applies'
+    ],
+    price: 'Value: Unlimited Maggie Bowls 🍜',
+    color: '#ff758c',
+    icon: '🍳'
+  },
+  {
+    id: 'bathroom_kit',
+    title: '👑 Royal VIP Bathroom Cleaning Kit Supreme 🚽🧽',
+    category: 'GIFT #4 • THE GRAND FINALE PRANK GIFT',
+    tag: 'Ultimate Luxury Care Package ✨',
+    shortName: 'Deluxe Bathroom Kit',
+    desc: 'The Ultimate Luxury Care Package! Complete with Harpy 10X Power Toilet Cleaner, extra-strength tile brush, neon pink rubber gloves, and sparkling lavender fragrance!',
+    quote: '“You thought you were getting an iPhone 16 Pro Max?! 😂 Welcome to your glorious sparkling bathroom career!”',
+    sender: 'Lovely brother Kathirvel 🧼✨',
+    features: [
+      'Harpy 10X Power 99.9% stain & odor destroyer',
+      'Neon pink heavy-duty rubber gloves for royal hands',
+      'Eliminates 99.9% sibling arguments immediately',
+      'Certified Sister Cleaning Specialist Diploma included'
+    ],
+    price: 'Value: 5-Star Hotel Toilet Status 🌟',
+    color: '#54a0ff',
+    icon: '🚽'
+  }
+];
+

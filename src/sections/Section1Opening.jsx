@@ -34,7 +34,7 @@ export default function Section1Opening({ onNext }) {
           </div>
           <div className="glass-pill">
             <Sparkles size={16} color="#ffd700" />
-            <span>A RAKSHA BANDHAN GIFT FOR ALL SISTERS</span>
+            <span>A RAKSHA BANDHAN GIFT • BY LOVELY BROTHER KATHIRVEL</span>
             <Sparkles size={16} color="#ffd700" />
           </div>
           <div className="animate-float" style={{ animationDelay: '1.5s' }}>
@@ -73,7 +73,7 @@ export default function Section1Opening({ onNext }) {
             marginTop: '12px'
           }}
         >
-          This little surprise is for you — by blood, by friendship, or chosen by heart ❤️
+          This little surprise is crafted with love for you by your Lovely brother Kathirvel — by blood, by friendship, or chosen by heart ❤️
         </motion.p>
 
         {/* Decorative Floating Heart Ring */}
@@ -113,14 +113,19 @@ export default function Section1Opening({ onNext }) {
           </button>
         </motion.div>
 
-        <motion.p
+        <motion.div
           initial={{ opacity: 0 }}
-          animate={{ opacity: 0.7 }}
+          animate={{ opacity: 0.9 }}
           transition={{ delay: 1.6 }}
-          style={{ fontSize: '0.85rem', marginTop: '24px', color: 'var(--cream-muted)' }}
+          style={{ marginTop: '24px', display: 'flex', flexDirection: 'column', gap: '6px', alignItems: 'center' }}
         >
-          Best experienced with sound 🎵
-        </motion.p>
+          <span style={{ fontSize: '0.95rem', color: '#ffd700', fontWeight: 600 }}>
+            Made with ❤️ by your Lovely brother Kathirvel
+          </span>
+          <span style={{ fontSize: '0.82rem', color: 'var(--cream-muted)' }}>
+            Best experienced with sound 🎵
+          </span>
+        </motion.div>
       </div>
     </section>
   );

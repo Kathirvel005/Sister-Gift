@@ -238,7 +238,7 @@ export default function Section6VirtualRakhi({ onNext }) {
                       <span>Tie Again</span>
                     </button>
                     <button onClick={onNext} className="btn-festive">
-                      <span>Read Emotional Message</span>
+                      <span>Unbox Brother's Gifts 🎁</span>
                       <ArrowRight size={20} />
                     </button>
                   </div>
@@ -251,7 +251,7 @@ export default function Section6VirtualRakhi({ onNext }) {
         {/* Subtle hint */}
         {!isTied && (
           <button onClick={onNext} className="btn-festive btn-festive-secondary" style={{ marginTop: '12px' }}>
-            <span>Skip to Message</span>
+            <span>Skip to Gifts 🎁</span>
             <ArrowRight size={18} />
           </button>
         )}

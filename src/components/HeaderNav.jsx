@@ -21,10 +21,11 @@ export default function HeaderNav({ activeSection, onNavigate, totalSections = 9
     { id: 3, name: 'Superpowers', icon: '⚡' },
     { id: 4, name: 'The Bond Timeline', icon: '⏳' },
     { id: 5, name: 'Virtual Rakhi', icon: '🎀' },
-    { id: 6, name: 'Heartfelt Words', icon: '💌' },
-    { id: 7, name: 'Mini Game', icon: '🎮' },
-    { id: 8, name: 'Grand Surprise', icon: '🎁' },
-    { id: 9, name: 'Celebration & Certificate', icon: '📜' },
+    { id: 6, name: "Brother's Gifts", icon: '🎁' },
+    { id: 7, name: 'Heartfelt Words', icon: '💌' },
+    { id: 8, name: 'Mini Game', icon: '🎮' },
+    { id: 9, name: 'Grand Surprise', icon: '🌟' },
+    { id: 10, name: 'Celebration & Certificate', icon: '📜' },
   ];
 
   const handleNavClick = (sectionId) => {
@@ -70,17 +71,22 @@ export default function HeaderNav({ activeSection, onNavigate, totalSections = 9
           }}
         >
           <span style={{ fontSize: '1.25rem' }}>🌸</span>
-          <span
-            style={{
-              fontFamily: 'var(--font-display)',
-              fontWeight: 800,
-              fontSize: 'clamp(0.85rem, 2vw, 1.05rem)',
-              letterSpacing: '0.5px'
-            }}
-            className="text-gold"
-          >
-            FOR ALL SISTERS
-          </span>
+          <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'flex-start', lineHeight: 1.1 }}>
+            <span
+              style={{
+                fontFamily: 'var(--font-display)',
+                fontWeight: 800,
+                fontSize: 'clamp(0.85rem, 2vw, 1.05rem)',
+                letterSpacing: '0.5px'
+              }}
+              className="text-gold"
+            >
+              FOR ALL SISTERS
+            </span>
+            <span style={{ fontSize: '0.68rem', color: '#ff758c', fontWeight: 600, letterSpacing: '0.3px' }} className="hide-mobile">
+              By Lovely brother Kathirvel
+            </span>
+          </div>
           <Heart size={16} fill="#ff2e93" color="#ff2e93" style={{ animation: 'pulse 1.5s infinite' }} />
         </div>
 
@@ -214,13 +220,16 @@ export default function HeaderNav({ activeSection, onNavigate, totalSections = 9
               style={{
                 fontFamily: 'var(--font-display)',
                 fontSize: '1.4rem',
-                marginBottom: '8px',
+                marginBottom: '4px',
                 color: '#ffd700'
               }}
             >
               JOURNEY CHAPTERS
             </h3>
-            <p style={{ color: 'var(--cream-muted)', fontSize: '0.9rem', marginBottom: '20px' }}>
+            <p style={{ color: '#ff758c', fontSize: '0.82rem', fontWeight: 600, marginBottom: '6px' }}>
+              Made with ❤️ by Lovely brother Kathirvel
+            </p>
+            <p style={{ color: 'var(--cream-muted)', fontSize: '0.88rem', marginBottom: '20px' }}>
               Jump to any moment of the sister celebration
             </p>
 

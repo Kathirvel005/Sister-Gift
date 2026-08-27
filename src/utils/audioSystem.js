@@ -248,6 +248,44 @@ class SoundSystem {
       osc.stop(startTime + d + 0.05);
     });
   }
+
+  playGiftUnbox() {
+    this.init();
+    if (!this.ctx) return;
+    // Ascending celebratory chime
+    const notes = [392, 523.25, 659.25, 783.99, 1046.50, 1318.51];
+    notes.forEach((freq, idx) => {
+      const osc = this.ctx.createOscillator();
+      const gain = this.ctx.createGain();
+      const startTime = this.ctx.currentTime + idx * 0.05;
+      osc.type = 'triangle';
+      osc.frequency.setValueAtTime(freq, startTime);
+      gain.gain.setValueAtTime(0.15, startTime);
+      gain.gain.exponentialRampToValueAtTime(0.001, startTime + 0.25);
+      osc.connect(gain);
+      gain.connect(this.ctx.destination);
+      osc.start(startTime);
+      osc.stop(startTime + 0.26);
+    });
+  }
+
+  playFunnyBoing() {
+    this.init();
+    if (!this.ctx) return;
+    const osc = this.ctx.createOscillator();
+    const gain = this.ctx.createGain();
+    const now = this.ctx.currentTime;
+    osc.type = 'sine';
+    osc.frequency.setValueAtTime(220, now);
+    osc.frequency.exponentialRampToValueAtTime(660, now + 0.12);
+    osc.frequency.exponentialRampToValueAtTime(180, now + 0.28);
+    gain.gain.setValueAtTime(0.18, now);
+    gain.gain.exponentialRampToValueAtTime(0.001, now + 0.32);
+    osc.connect(gain);
+    gain.connect(this.ctx.destination);
+    osc.start(now);
+    osc.stop(now + 0.33);
+  }
 }
 
 export const audioSystem = new SoundSystem();
