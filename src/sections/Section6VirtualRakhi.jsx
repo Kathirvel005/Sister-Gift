@@ -196,13 +196,49 @@ export default function Section6VirtualRakhi({ onNext }) {
                     style={{
                       fontSize: '1.3rem',
                       padding: '8px 24px',
-                      marginBottom: '20px',
+                      marginBottom: '12px',
                       background: 'rgba(255, 215, 0, 0.15)',
                       borderColor: '#ffd700'
                     }}
                   >
                     <span>RAKHI TIED ❤️</span>
                   </div>
+
+                  {/* Brother's Raksha Bandhan Greeting */}
+                  <motion.div
+                    initial={{ opacity: 0, y: 8 }}
+                    animate={{ opacity: 1, y: 0 }}
+                    transition={{ delay: 0.2 }}
+                    style={{
+                      marginBottom: '20px',
+                      display: 'flex',
+                      flexDirection: 'column',
+                      alignItems: 'center',
+                      gap: '4px'
+                    }}
+                  >
+                    <h3
+                      style={{
+                        fontFamily: 'var(--font-display)',
+                        fontSize: 'clamp(1.2rem, 3.5vw, 1.65rem)',
+                        color: '#ffd700',
+                        fontWeight: 800,
+                        textShadow: '0 0 16px rgba(255, 215, 0, 0.5)'
+                      }}
+                    >
+                      Happy Raksha Bandhan Sisters! 🌸
+                    </h3>
+                    <span
+                      style={{
+                        fontSize: 'clamp(0.95rem, 2.5vw, 1.15rem)',
+                        color: '#ff758c',
+                        fontWeight: 700,
+                        letterSpacing: '0.3px'
+                      }}
+                    >
+                      — By your Lovely brother Kathirvel ❤️
+                    </span>
+                  </motion.div>
 
                   {/* Promises List */}
                   <div
