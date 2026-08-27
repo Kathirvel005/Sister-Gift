@@ -122,7 +122,7 @@ export default function Section7EmotionalMessage({ onNext }) {
           viewport={{ once: true }}
         >
           <button onClick={onNext} className="btn-festive">
-            <span>Play The Festive Mini-Game</span>
+            <span>Play Kathirvel's Snack Raid Game 🎮</span>
             <ArrowRight size={20} />
           </button>
         </motion.div>

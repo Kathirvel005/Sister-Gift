@@ -23,7 +23,7 @@ export default function HeaderNav({ activeSection, onNavigate, totalSections = 9
     { id: 5, name: 'Virtual Rakhi', icon: '🎀' },
     { id: 6, name: "Brother's Gifts", icon: '🎁' },
     { id: 7, name: 'Heartfelt Words', icon: '💌' },
-    { id: 8, name: 'Mini Game', icon: '🎮' },
+    { id: 8, name: "Kathirvel's Game", icon: '🎮' },
     { id: 9, name: 'Grand Surprise', icon: '🌟' },
     { id: 10, name: 'Celebration & Certificate', icon: '📜' },
   ];
